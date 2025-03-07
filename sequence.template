@@ -39,10 +39,10 @@
 //                possible scenarios (current item is and is not the
 //                last item in the sequence).
 
-#include <assert>
+#include <cassert>
 #include "sequence.h"
 
-#include <assert>
+#include <cassert>
 
 template <typename T>
 sequence<T>::sequence() : used(0), current_index(0) {}
@@ -120,5 +120,7 @@ typename sequence<T>::value_type sequence<T>::current() const
     assert(is_item());
     return data[current_index];
 }
+
+
 
 
